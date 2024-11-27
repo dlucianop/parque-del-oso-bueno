@@ -77,6 +77,12 @@ input[type="date"]:focus {
     cursor: not-allowed;
 }
 
-.day:hover:not(.unavailable) {
+.day.past {
+    background-color: #e2e3e5;
+    color: #6c757d;
+    cursor: not-allowed;
+  }
+
+.day:hover:not(.unavailable):not(.past) {
     background-color: #c3e6cb;
 }
